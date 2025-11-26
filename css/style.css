@@ -319,7 +319,7 @@ section {
 }
 .sect1 .txt > span {
     display: block;
-    color: #545454;
+    color: #565656;
     margin-bottom: 100px;
 }
 .sect1 .arrow span {
@@ -444,6 +444,7 @@ section {
     margin-right: 10px;
     margin-bottom: 10px;
     position: relative;
+    color: #565656;
 }
 .sect2 .inner > ul li::before {
     content: '';
@@ -600,7 +601,7 @@ section {
 }
 .sect3 .cont .item > span {
     display: block;
-    color: #545454;
+    color: #565656;
     margin-bottom: 80px;
 }
 
@@ -645,8 +646,8 @@ section {
     transition: .1s;
 }
 .sect4 .btn_top:hover {
-    border: 1px solid #545454;
-    background-color: #545454;
+    border: 1px solid #FF6347;
+    background-color: #FF6347;
 }
 .sect4 .btn_top svg {
     width: 100%;

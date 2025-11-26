@@ -717,7 +717,7 @@ section {
 @media screen and (max-width: 767px) {
     .sect1 {
         height: 640px;
-        padding: 50px 0 0;
+        padding: 60px 0 0;
     }
     .sect1 h1 {
         justify-content: space-between;

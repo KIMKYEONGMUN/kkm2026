@@ -499,10 +499,19 @@ section {
     cursor: pointer;
     transition: .1s;
 }
-.sect3 .list li:hover,
-.sect3 .list li.on {
-    filter: grayscale(.7);
-    opacity: .7;
+.sect3 .list li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: .1s;
+}
+.sect3 .list li:hover::after,
+.sect3 .list li.on::after {
+    background-color: rgba(255, 255, 255, .8);
 }
 .sect3 .list li figure {
     width: 100%;
@@ -519,6 +528,30 @@ section {
     color: #fff;
     font-size: 14px;
     font-weight: 300;
+    z-index: 1;
+}
+.sect3 .list li svg {
+    width: 20%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+.sect3 .list li svg path {
+    stroke-dasharray: 135.76449584960938;
+    stroke-dashoffset: 135.76449584960938;
+}
+.sect3 .list li.on svg path {
+    animation: check .4s forwards;
+}
+@keyframes check {
+    0% {
+        stroke-dashoffset: 135.76449584960938;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
 }
 .sect3 .cont {
     width: 80%;

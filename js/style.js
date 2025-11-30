@@ -13,7 +13,7 @@ $(function(){
         $('.sect3 .list li').removeClass('on');
         $(this).addClass('on');
         $('.sect3 .item').hide();
-        $('.sect3 .item').eq($(this).index()).fadeIn(200);
+        $('.sect3 .item').eq($(this).index()).fadeIn();
         $('html, body').animate({
             scrollTop: $('.sect3').offset().top,
         });

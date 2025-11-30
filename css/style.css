@@ -581,41 +581,39 @@ section {
     width: 100%;
     object-fit: contain;
 }
-.sect3 .cont .item .title {
-    display: flex;
-    margin-bottom: 100px;
-}
-.sect3 .cont .item .title h3 {
+.sect3 .cont .item h3 {
     font-size: 48px;
     font-weight: 200;
-    line-height: 1.3;
-    margin-right: 60px;
+    margin-bottom: 100px;
 }
-.sect3 .cont .item .title a {
+.sect3 .cont .item .infor {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.sect3 .cont .item .infor a {
     width: 64px;
     height: 64px;
+    margin-right: 60px;
 }
-.sect3 .cont .item .title a svg {
+.sect3 .cont .item .infor a svg {
     width: 100%;
     height: 100%;
 }
-.sect3 .cont .item .title a svg rect {
+.sect3 .cont .item .infor a svg rect {
     transition: .1s;
 }
-.sect3 .cont .item .title a:hover svg rect {
+.sect3 .cont .item .infor a:hover svg rect {
     fill: #FF6347;
 }
-.sect3 .cont .item > ul {
-    margin-bottom: 80px;
-}
-.sect3 .cont .item ul li ul li {
+.sect3 .cont .item .infor ul li ul li {
     display: inline-block;
     margin-bottom: 10px;
     padding-right: 20px;
     margin-right: 10px;
     position: relative;
 }
-.sect3 .cont .item ul li ul li::before {
+.sect3 .cont .item .infor ul li ul li::before {
     content: '';
     width: 1px;
     height: 50%;
@@ -625,11 +623,11 @@ section {
     top: 50%;
     transform: translateY(-50%);
 }
-.sect3 .cont .item ul li ul li:last-of-type {
+.sect3 .cont .item .infor ul li ul li:last-of-type {
     padding-right: 0;
     margin-right: 0;
 }
-.sect3 .cont .item ul li ul li:last-of-type:before {
+.sect3 .cont .item .infor ul li ul li:last-of-type:before {
     display: none;
 }
 .sect3 .cont .item > span {
@@ -828,25 +826,22 @@ section {
 
 
 
-    .sect3 .cont .item .title {
-        margin-bottom: 40px;
-    }
-    .sect3 .cont .item .title h3 {
+    .sect3 .cont .item h3 {
         font-size: 36px;
-        margin-right: 20px;
-    }
-    .sect3 .cont .item .title a {
-        width: 42px;
-        height: 42px;
-    }
-    .sect3 .cont .item .title a svg {
-        margin-top: 4px;
-    }
-    .sect3 .cont .item .title a svg rect {
-        fill: #FF6347;
-    }
-    .sect3 .cont .item > ul {
         margin-bottom: 40px;
+    }
+    .sect3 .cont .item .infor {
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .sect3 .cont .item .infor a {
+        width: 48px;
+        height: 48px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .sect3 .cont .item .infor a svg rect {
+        fill: #FF6347;
     }
     .sect3 .cont .item > span {
         margin-bottom: 40px;

@@ -638,7 +638,10 @@ section {
 }
 .sect3 .cont .item .note span {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+.sect3 .cont .item .note p {
+    line-height: 1.8;
 }
 
 

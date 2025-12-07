@@ -584,6 +584,7 @@ section {
 .sect3 .cont .item h3 {
     font-size: 48px;
     font-weight: 200;
+    line-height: 1.3;
     margin-bottom: 100px;
 }
 .sect3 .cont .item .infor {
@@ -630,10 +631,14 @@ section {
 .sect3 .cont .item .infor ul li ul li:last-of-type:before {
     display: none;
 }
-.sect3 .cont .item > span {
+.sect3 .cont .item .note {
     display: block;
     color: #565656;
-    margin-bottom: 80px;
+    margin-bottom: 60px;
+}
+.sect3 .cont .item .note span {
+    display: block;
+    margin-bottom: 10px;
 }
 
 
@@ -642,27 +647,32 @@ section {
 
 .sect4 {
     color: #454545;
+    display: flex;
+    align-items: center;
 }
-.sect4 .txt {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-30%);
+.sect4 .inner {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
 }
-.sect4 .txt p {
+.sect4 .contact {
+    width: 50%;
+}
+.sect4 .contact p {
     font-size: 64px;
     font-weight: 100;
+    line-height: 1;
     margin-bottom: 100px;
 }
-.sect4 .txt dl {
+.sect4 .contact dl {
     margin-bottom: 50px;
 }
-.sect4 .txt dl dt,
-.sect4 .txt dl dd {
+.sect4 .contact dl dt,
+.sect4 .contact dl dd {
     display: inline-block;
     font-size: 18px;
 }
-.sect4 .txt dl dt {
+.sect4 .contact dl dt {
     margin-right: 10px;
 }
 .sect4 .btn_top {
@@ -689,6 +699,13 @@ section {
 }
 .sect4 .btn_top:hover svg rect {
     fill: #fff;
+}
+
+.sect4 .introduce {
+    width: 50%;
+}
+.sect4 .introduce p {
+    line-height: 2;
 }
 
 
@@ -783,6 +800,18 @@ section {
         border-bottom: 1px solid #ddd;
         margin-bottom: 100px;
     }
+
+
+
+
+
+    .sect4 .contact {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .sect4 .introduce {
+        width: 100%;
+    }
 }
 
 
@@ -845,6 +874,14 @@ section {
     }
     .sect3 .cont .item > span {
         margin-bottom: 40px;
+    }
+
+
+
+
+
+    .sect4 .contact p {
+        font-size: 48px;
     }
 }
 

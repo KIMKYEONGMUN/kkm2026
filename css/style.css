@@ -168,7 +168,6 @@ section {
     position: absolute;
     left: 0;
     top: 46%;
-    transform: translateY(-50% - 1px);
     z-index: -1;
     animation: line 8s linear infinite forwards;
 }

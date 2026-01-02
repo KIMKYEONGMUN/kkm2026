@@ -497,7 +497,13 @@ section {
     position: relative;
     margin-bottom: 20px;
     cursor: pointer;
-    transition: .1s;
+    transition: .4s;
+}
+.sect3 .list li:hover {
+    transform: translateX(-30px);
+}
+.sect3 .list li.on {
+    transform: translateX(30px);
 }
 .sect3 .list li::after {
     content: '';

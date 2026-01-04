@@ -514,7 +514,6 @@ section {
     background-color: rgba(255, 255, 255, 0);
     transition: .1s;
 }
-.sect3 .list li:hover::after,
 .sect3 .list li.on::after {
     background-color: rgba(255, 255, 255, .8);
 }
